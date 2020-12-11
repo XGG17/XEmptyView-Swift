@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="XEmptyView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-Mj-KhA">
+                                <rect key="frame" x="0.0" y="125.5" width="375" height="376"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XEmptyView-Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfl-MO-dgi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urm-7e-CPC">
+                                        <rect key="frame" x="107.5" y="156" width="160" height="40"/>
+                                        <color key="backgroundColor" red="0.42352941179999998" green="0.30196078430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Urm-7e-CPC" secondAttribute="height" multiplier="4:1" id="YGS-4G-SMy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="Loading">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadingEvent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="anx-M2-5xL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sb-pY-6aC">
+                                        <rect key="frame" x="107.5" y="216" width="160" height="40"/>
+                                        <color key="backgroundColor" red="0.42352941179999998" green="0.30196078430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="Lottie Json 动画">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lottieAnimationEvent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3SD-Yh-BVR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-qJ-v6i">
+                                        <rect key="frame" x="107.5" y="276" width="160" height="40"/>
+                                        <color key="backgroundColor" red="0.42352941179999998" green="0.30196078430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="Gif 动画">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gifAnimationEvent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RuW-sd-sgP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taU-jT-Erh">
+                                        <rect key="frame" x="107.5" y="336" width="160" height="40"/>
+                                        <color key="backgroundColor" red="0.42352941179999998" green="0.30196078430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="静态图片">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="normalImageEvent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NzY-g4-wMF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="kfl-MO-dgi" firstAttribute="top" secondItem="9bx-Mj-KhA" secondAttribute="top" id="1Y5-Qy-c1y"/>
+                                    <constraint firstItem="0Sb-pY-6aC" firstAttribute="centerX" secondItem="9bx-Mj-KhA" secondAttribute="centerX" id="90i-FV-NCt"/>
+                                    <constraint firstItem="taU-jT-Erh" firstAttribute="width" secondItem="Thd-qJ-v6i" secondAttribute="width" id="CS3-fO-XaK"/>
+                                    <constraint firstItem="Thd-qJ-v6i" firstAttribute="width" secondItem="0Sb-pY-6aC" secondAttribute="width" id="DJP-dK-R0W"/>
+                                    <constraint firstItem="kfl-MO-dgi" firstAttribute="leading" secondItem="9bx-Mj-KhA" secondAttribute="leading" id="Gf9-0n-Ebh"/>
+                                    <constraint firstAttribute="trailing" secondItem="kfl-MO-dgi" secondAttribute="trailing" id="KYN-BI-4wY"/>
+                                    <constraint firstItem="Urm-7e-CPC" firstAttribute="top" secondItem="kfl-MO-dgi" secondAttribute="bottom" constant="120" id="Trt-ft-CKg"/>
+                                    <constraint firstItem="0Sb-pY-6aC" firstAttribute="top" secondItem="Urm-7e-CPC" secondAttribute="bottom" constant="20" id="Uvf-NI-0YX"/>
+                                    <constraint firstItem="0Sb-pY-6aC" firstAttribute="width" secondItem="Urm-7e-CPC" secondAttribute="width" id="YCq-dk-CNE"/>
+                                    <constraint firstAttribute="bottom" secondItem="taU-jT-Erh" secondAttribute="bottom" id="aE7-tH-M9Q"/>
+                                    <constraint firstItem="Urm-7e-CPC" firstAttribute="centerX" secondItem="9bx-Mj-KhA" secondAttribute="centerX" id="aOd-es-rcx"/>
+                                    <constraint firstItem="Thd-qJ-v6i" firstAttribute="centerX" secondItem="9bx-Mj-KhA" secondAttribute="centerX" id="bBM-I1-5hs"/>
+                                    <constraint firstItem="Urm-7e-CPC" firstAttribute="width" secondItem="9bx-Mj-KhA" secondAttribute="width" multiplier="0.426667" id="e2S-v4-88J"/>
+                                    <constraint firstItem="taU-jT-Erh" firstAttribute="height" secondItem="Thd-qJ-v6i" secondAttribute="height" id="fyQ-vS-1c8"/>
+                                    <constraint firstItem="0Sb-pY-6aC" firstAttribute="height" secondItem="Urm-7e-CPC" secondAttribute="height" id="i3V-dB-cQe"/>
+                                    <constraint firstItem="Thd-qJ-v6i" firstAttribute="height" secondItem="0Sb-pY-6aC" secondAttribute="height" id="ogU-VO-GHK"/>
+                                    <constraint firstItem="taU-jT-Erh" firstAttribute="centerX" secondItem="9bx-Mj-KhA" secondAttribute="centerX" id="pGU-eV-RaX"/>
+                                    <constraint firstItem="Thd-qJ-v6i" firstAttribute="top" secondItem="0Sb-pY-6aC" secondAttribute="bottom" constant="20" id="s6o-53-mNg"/>
+                                    <constraint firstItem="taU-jT-Erh" firstAttribute="top" secondItem="Thd-qJ-v6i" secondAttribute="bottom" constant="20" id="ti3-TN-Itx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9bx-Mj-KhA" secondAttribute="trailing" id="0N6-SI-qIk"/>
+                            <constraint firstItem="9bx-Mj-KhA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-20" id="7UY-iq-eiq"/>
+                            <constraint firstItem="9bx-Mj-KhA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="za0-aq-VbN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="9bx-Mj-KhA" id="ZA1-3Q-lIB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

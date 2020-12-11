@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'XEmptyView_Example' do
+  pod 'XEmptyView', :path => '../'
+
+  target 'XEmptyView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

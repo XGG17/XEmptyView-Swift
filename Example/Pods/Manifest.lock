@@ -1,0 +1,31 @@
+PODS:
+  - lottie-ios (3.1.9)
+  - SnapKit (4.2.0)
+  - SwiftGifOrigin (1.7.0)
+  - XEmptyView (0.0.1):
+    - lottie-ios
+    - SnapKit
+    - SwiftGifOrigin
+
+DEPENDENCIES:
+  - XEmptyView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - SnapKit
+    - SwiftGifOrigin
+
+EXTERNAL SOURCES:
+  XEmptyView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  XEmptyView: 30618fc5deb87d1e5a2dcbace3e99e4d0a54f1f7
+
+PODFILE CHECKSUM: 391fa30e9951c7b585312879fe8fccf11a3a4c1a
+
+COCOAPODS: 1.10.0

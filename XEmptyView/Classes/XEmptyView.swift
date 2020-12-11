@@ -183,10 +183,10 @@ public class XEmptyView: UIView {
         // 设置加载指示器的大小属性
         if p.isLarge {
             if #available(iOS 13.0, *) {
-                self.indicatorView?.activityIndicatorViewStyle = UIActivityIndicatorView.Style.large
+                self.indicatorView?.style = UIActivityIndicatorView.Style.large
             } else {
                 // Fallback on earlier versions
-                self.indicatorView?.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
+                self.indicatorView?.style = UIActivityIndicatorView.Style.gray
             }
         }
         
@@ -259,11 +259,11 @@ public class XEmptyView: UIView {
             // 优先显示图片
             if ((p.btnImageFile != nil) && p.btnImageFile!.count > 0) {
                 // 设置图片
-                self.clickButton?.setImage(UIImage.init(named: p.btnImageFile!), for: UIControlState.normal)
+                self.clickButton?.setImage(UIImage.init(named: p.btnImageFile!), for: UIControl.State.normal)
             } else if ((p.btnTitle != nil) && p.btnTitle!.count > 0) {
                 // 设置文字按钮属性
-                self.clickButton?.setTitle(p.btnTitle!, for: UIControlState.normal)
-                self.clickButton?.setTitleColor(p.btnTitleColor!, for: UIControlState.normal)
+                self.clickButton?.setTitle(p.btnTitle!, for: UIControl.State.normal)
+                self.clickButton?.setTitleColor(p.btnTitleColor!, for: UIControl.State.normal)
                 self.clickButton?.titleLabel?.font = p.btnTitleFont
                 self.clickButton?.layer.cornerRadius = 2
                 self.clickButton?.layer.masksToBounds = true
@@ -360,10 +360,10 @@ public class XEmptyView: UIView {
     lazy var indicatorView: UIActivityIndicatorView? = {
         let indicatorView = UIActivityIndicatorView.init()
         if #available(iOS 13.0, *) {
-            indicatorView.activityIndicatorViewStyle = UIActivityIndicatorView.Style.medium
+            indicatorView.style = UIActivityIndicatorView.Style.medium
         } else {
             // Fallback on earlier versions
-            indicatorView.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
+            indicatorView.style = UIActivityIndicatorView.Style.gray
         }
         return indicatorView
     }()
@@ -371,7 +371,7 @@ public class XEmptyView: UIView {
     /// 显示图片、gif
     lazy var animationImageView: UIImageView? = {
         let animationImageView: UIImageView = UIImageView.init()
-        animationImageView.contentMode = UIViewContentMode.scaleToFill
+        animationImageView.contentMode = UIView.ContentMode.scaleToFill
         animationImageView.clipsToBounds = true
         return animationImageView
     }()
@@ -380,7 +380,7 @@ public class XEmptyView: UIView {
     lazy var lottieView: AnimationView? = {
         let lottieView: AnimationView = AnimationView.init()
         lottieView.loopMode = .loop
-        lottieView.contentMode = UIViewContentMode.scaleAspectFill;
+        lottieView.contentMode = UIView.ContentMode.scaleAspectFill;
         lottieView.isUserInteractionEnabled = false;
         return lottieView
     }()
@@ -403,8 +403,8 @@ public class XEmptyView: UIView {
     
     /// 显示按钮View
     lazy var clickButton: UIButton? = {
-        let clickButton: UIButton = UIButton.init(type: UIButtonType.custom)
-        clickButton.addTarget(self, action: #selector(clickEvent), for: UIControlEvents.touchUpInside)
+        let clickButton: UIButton = UIButton.init(type: UIButton.ButtonType.custom)
+        clickButton.addTarget(self, action: #selector(clickEvent), for: UIControl.Event.touchUpInside)
         return clickButton
     }()
 }

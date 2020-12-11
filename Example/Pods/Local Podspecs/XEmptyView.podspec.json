@@ -1,19 +1,19 @@
 {
   "name": "XEmptyView",
-  "version": "0.0.1",
-  "summary": "A short description of XEmptyView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/873688137@qq.com/XEmptyView",
+  "version": "1.0.0",
+  "summary": "Swift空状态加载、提示页面",
+  "description": "Swift空状态加载、提示View，支持系统加载指示器Loading加载，Lottie(Json)动画加载，Gif动画加载以及静态图片展示，依赖SnapKit SwiftGifOrigin lottie-ios 等第三方框架",
+  "homepage": "https://github.com/xgg17",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "873688137@qq.com": "3230672934@qq.com"
+    "xiang": "2559818083@qq.com"
   },
   "source": {
-    "git": "https://github.com/873688137@qq.com/XEmptyView.git",
-    "tag": "0.0.1"
+    "git": "https://github.com/XGG17/XEmptyView-Swift.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "9.0"

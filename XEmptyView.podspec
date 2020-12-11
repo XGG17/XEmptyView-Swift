@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'Swift空状态加载、提示页面'
   s.description      = <<-DESC
-    Swift空状态加载、提示View，Swift5.0编写，支持系统加载指示器Loading加载，Lottie(Json)动画加载，Gif动画加载以及静态图片展示，依赖SnapKit SwiftGifOrigin lottie-ios 等第三方框架
+    Swift空状态加载、提示View，支持系统加载指示器Loading加载，Lottie(Json)动画加载，Gif动画加载以及静态图片展示，依赖SnapKit SwiftGifOrigin lottie-ios 等第三方框架
                        DESC
   s.homepage         = 'https://github.com/xgg17'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

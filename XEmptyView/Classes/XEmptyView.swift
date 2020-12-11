@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 import SwiftGifOrigin
 import Lottie
-import Kingfisher
 
 // MARK: - 全局属性设置
 

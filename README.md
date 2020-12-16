@@ -5,9 +5,11 @@
 # 使用方法
 1、pod方法导入：pod 'XEmptyView'， 需要引入 source 'https://github.com/XGG17/XPodSpec.git'
 
-* 使用Swift5.0版本，pod方法导入完成后会同时引入 SnapKit、lottie-ios、SwiftGifOrigin 等依赖的第三方库，请注意避免版本冲突。
+* 使用Swift5.0，支持iOS10.0以上版本；pod方法导入完成后会同时引入 SnapKit、lottie-ios、SwiftGifOrigin 等依赖的第三方库，请注意避免版本冲突。
+
 
 2、在需要使用的地方导入XEmptyView：import XEmptyView
+
 
 3、调用方法
 ```

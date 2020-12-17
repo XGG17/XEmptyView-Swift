@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     }
     
     func closeEmptyView() -> Void {
-        // 模拟3秒钟时候关闭
+        // 模拟2秒钟时候关闭
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.mainView.isHidden = false
             self.view.ep.clear()

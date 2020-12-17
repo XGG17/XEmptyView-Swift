@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  XEmptyView
 //
-//  Created by 873688137@qq.com on 12/09/2020.
-//  Copyright (c) 2020 873688137@qq.com. All rights reserved.
+//  Created by xiang on 12/09/2020.
+//  Copyright (c) 2020 xiang. All rights reserved.
 //
 
 import UIKit

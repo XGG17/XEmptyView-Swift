@@ -2,6 +2,8 @@
 
 一句代码支持Loading动画、空状态动画、空状态静态图片显示, XEmptyView依赖于第三方库：[SnapKit](https://github.com/swiftgif/SwiftGif.git)、[lottie-ios](https://github.com/airbnb/lottie-ios.git)、[SwiftGifOrigin](https://github.com/swiftgif/SwiftGif.git).
 
+如果能帮到你，欢迎点个star。
+
 # 使用方法
 1、pod方法导入：pod 'XEmptyView'， 需要引入 source 'https://github.com/XGG17/XPodSpec.git'
 
